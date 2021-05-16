@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   background-color: $color-secondary-light-3;
-  padding: var(--gutter-section);
+  padding: var(--gutter-section-small);
 
   @include media(tablet) {
     flex-direction: row;
+    padding: var(--gutter-section);
   }
 
   &__info {
@@ -43,6 +44,7 @@
       margin-bottom: var(--gutter-elem-medium);
     }
   }
+
   &__features {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +85,7 @@
   }
 
   &__recommend-photo {
-    width: 100%;
+    min-width: 0;
 
     border-radius: 50%;
     border: 3px solid white;
