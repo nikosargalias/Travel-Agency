@@ -1,0 +1,54 @@
+.testimonial {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: white;
+  padding: var(--gutter-section-small);
+  overflow: hidden;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    font-size: 15rem;
+    font-family: sans-serif;
+    color: $font-color-dark;
+    opacity: 0.1;
+    line-height: 1;
+    transform: rotate(5deg);
+  }
+
+  &__paragraph {
+    margin-bottom: var(--gutter-elem-medium);
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-details {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-weight: 700;
+  }
+
+  &__user-date {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  &__rating {
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  &__img {
+    margin-right: 2rem;
+    border-radius: 50%;
+    width: 80px;
+  }
+}

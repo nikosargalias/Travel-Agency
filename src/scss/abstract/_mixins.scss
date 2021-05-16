@@ -1,0 +1,27 @@
+@use './variables.scss';
+
+@mixin center-y() {
+  display: flex;
+  align-items: center;
+}
+@mixin center-xy() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin media($device) {
+  // @if $device = "mobile" {
+  //   @media (max-width: map-get($viewport, $device)) {
+  //     @content;
+  //   }
+  // } @else {
+  //   @media (min-width: map-get($viewport, $device)) {
+  //     @content;
+  //   }
+  // }
+
+  @media (min-width: map-get($viewport, $device)) {
+    @content;
+  }
+}

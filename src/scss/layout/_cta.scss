@@ -1,0 +1,12 @@
+.cta {
+  padding: var(--gutter-section);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: $border;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: var(--gutter-elem-large);
+  }
+}

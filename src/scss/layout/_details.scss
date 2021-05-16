@@ -1,0 +1,95 @@
+.details {
+  padding: var(--gutter-section);
+  display: flex;
+  flex-direction: column;
+  background-color: $color-secondary-light-3;
+  padding: var(--gutter-section);
+
+  @include media(tablet) {
+    flex-direction: row;
+  }
+
+  &__info {
+    width: 100%;
+    background: white;
+    padding: var(--gutter-section-small);
+    margin-right: var(--gutter-section);
+    margin-bottom: var(--gutter-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    @include media(tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__testimonials > :not(:last-child) {
+    margin-bottom: var(--gutter-section);
+  }
+
+  &__testimonial-btn {
+    align-self: center;
+  }
+
+  &__paragraph {
+    &:not(:last-child) {
+      margin-bottom: var(--gutter-elem-medium);
+    }
+  }
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: var(--gutter-elem-large) 0;
+    // margin: auto 0;
+    padding: var(--gutter-elem-large) 0;
+    border-bottom: $border;
+    border-top: $border;
+  }
+
+  &__feature {
+    flex-basis: 48%;
+
+    &::before {
+      content: ">";
+      color: $color-primary;
+      margin-right: 1rem;
+    }
+  }
+
+  &__recommend {
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+
+  &__recommend-count {
+    flex-basis: 68%;
+  }
+
+  &__recommend-friends {
+    flex-basis: 28%;
+    display: flex;
+  }
+
+  &__recommend-photo {
+    width: 100%;
+
+    border-radius: 50%;
+    border: 3px solid white;
+
+    &:not(:last-of-type) {
+      margin-right: -10px;
+    }
+  }
+}

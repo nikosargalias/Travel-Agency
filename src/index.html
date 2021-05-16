@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/83087b65bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="home">
+    <header class="home__header header">
+      <img src="./assets/img/logo.png" alt="" class="header__logo" />
+
+      <form action="" class="header__search search">
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search hotels"
+          aria-label="Search hotels"
+        />
+        <button class="search__btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <nav class="header__nav nav">
+        <div class="nav__icon-box">
+          <i class="fas fa-bell nav__icon"></i>
+          <span class="nav__notification">13</span>
+        </div>
+        <div class="nav__icon-box">
+          <i class="fas fa-comments nav__icon"></i>
+          <span class="nav__notification">13</span>
+        </div>
+        <div class="nav__user">
+          <img src="./assets/img/user.jpg" alt="" class="nav__user-img" />
+          <spav class="nav__user-name">Nikos</spav>
+          <nav class="nav__user-dropdown">
+            <ul class="nav__user-list">
+              <li class="nav__user-item">
+                <a href="#" class="nav__user-link">Profile</a>
+              </li>
+              <li class="nav__user-item">
+                <a href="#" class="nav__user-link">Account</a>
+              </li>
+              <li class="nav__user-item">
+                <a href="#" class="nav__user-link">User Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <div class="home__main content">
+      <aside class="home__sidebar sidebar">
+        <nav class="sidebar__navigation">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <i class="sidebar__icon fas fa-home"></i>Hotels</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <i class="sidebar__icon fas fa-plane"></i>Flights</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"
+                ><i class="sidebar__icon fas fa-key"></i>Car Rental</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"
+                ><i class="sidebar__icon fas fa-map"></i>Visits</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__legal">&copy; 2021 by Agency</div>
+      </aside>
+
+      <main class="home__hotel-view hotel-view">
+        <div class="gallery">
+          <img src="./assets/img/hotel-1.jpg" alt="" class="gallery__img" />
+          <img src="./assets/img/hotel-2.jpg" alt="" class="gallery__img" />
+          <img src="./assets/img/hotel-3.jpg" alt="" class="gallery__img" />
+        </div>
+        <div class="overview">
+          <h1 class="overview__heading">Ala Mexico Hotel</h1>
+          <div class="overview__starts">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="overview__location">
+            <i class="overview__location-icon fas fa-map-marker-alt"></i>
+            <a href="#" class="overview__btn btn btn--text">Tulum, Mexico</a>
+          </div>
+          <div class="overview__rating">
+            <span class="overview__rating-average">9.0</span>
+            <span class="overview__rating-votes">127 votes</span>
+          </div>
+        </div>
+
+        <section class="home__details details">
+          <div class="details__info">
+            <p class="details__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              accusantium minima adipisci facilis assumenda repudiandae nobis
+              nesciunt tempora non deleniti.
+            </p>
+            <p class="details__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              aspernatur nobis, temporibus quod ab expedita?
+            </p>
+            <ul class="details__features">
+              <li class="details__feature">Close to the beach</li>
+              <li class="details__feature">Free airport shuttle</li>
+              <li class="details__feature">Air conditioning and heating</li>
+              <li class="details__feature">We speak all languages</li>
+              <li class="details__feature">Breakfast included</li>
+              <li class="details__feature">Free wifi in all rooms</li>
+              <li class="details__feature">Pets allowed</li>
+              <li class="details__feature">Perfect for families</li>
+            </ul>
+            <div class="details__recommend">
+              <p class="details__recommend-count">
+                Nikos and 3 other friends recommend this hotel.
+              </p>
+              <div class="details__recommend-friends">
+                <img
+                  src="./assets/img/user-3.jpg"
+                  alt="Friend 1"
+                  class="details__recommend-photo"
+                />
+                <img
+                  src="./assets/img/user-4.jpg"
+                  alt="Friend 2"
+                  class="details__recommend-photo"
+                />
+                <img
+                  src="./assets/img/user-5.jpg"
+                  alt="Friend 3"
+                  class="details__recommend-photo"
+                />
+                <img
+                  src="./assets/img/user-6.jpg"
+                  alt="Friend 4"
+                  class="details__recommend-photo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details__testimonials">
+            <figure class="testimonial">
+              <blockquote class="testimonial__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                voluptatibus similique sed alias soluta quibusdam!
+              </blockquote>
+              <figcaption class="testimonial__user">
+                <img
+                  src="./assets/img/user-1.jpg"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div class="testimonial__user-details">
+                  <p class="testimonial__user-name">Nikos</p>
+                  <p class="testimonial__user-date">May 7th 2020</p>
+                </div>
+                <span class="testimonial__rating">8.1</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial">
+              <blockquote class="testimonial__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                voluptatibus similique sed alias soluta quibusdam!
+              </blockquote>
+              <figcaption class="testimonial__user">
+                <img
+                  src="./assets/img/user-1.jpg"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div class="testimonial__user-details">
+                  <p class="testimonial__user-name">Nikos</p>
+                  <p class="testimonial__user-date">May 7th 2020</p>
+                </div>
+                <span class="testimonial__rating">8.1</span>
+              </figcaption>
+            </figure>
+            <a href="" class="details__testimonial-btn btn btn--text btn--icon"
+              >Show all</a
+            >
+          </div>
+        </section>
+        <div class="cta home__cta">
+          <h2 class="cta__heading">
+            Good news! We have 4 free rooms for your selected dates!
+          </h2>
+          <a href="" class="btn btn--primary btn--hover">
+            <span class="btn__visible">Book now!</span>
+            <span class="btn__hidden">Only 4 rooms left</span>
+          </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

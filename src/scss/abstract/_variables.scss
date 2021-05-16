@@ -1,0 +1,43 @@
+$color-primary: #eb2f64;
+$color-primary-light: #ff3366;
+$color-primary-dark: #ba265d;
+
+$color-secondary-light: #faf9f9;
+$color-secondary-light-2: #f4f2f2;
+$color-secondary-light-3: #f0eeee;
+$color-secondary-medium: #ccc;
+
+$color-tertiary: #777;
+$color-tertiary-dark: #333;
+$color-tertiary-light: #999;
+
+$font-color-light: #f3f3f3;
+$font-color-dark: #333;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+
+$border: solid $color-secondary-medium 1px;
+
+$viewport: (
+  "small-tab": 600px,
+  "tablet": 1100px,
+);
+
+:root {
+  --gutter-elem-small: 1rem;
+  --gutter-elem-medium: 2rem;
+  --gutter-elem-large: 3rem;
+  --gutter-section: 4rem;
+  --gutter-section-small: 3rem;
+
+  // @include media(tablet) {
+  //   --gutter-elem: 3rem;
+  // }
+}
+
+// $gutter-elem: 1rem;
+
+// @include media(tablet) {
+//   $gutter-elem: 3rem;
+// }
