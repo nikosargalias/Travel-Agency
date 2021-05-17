@@ -1,12 +1,9 @@
 .gallery {
   display: flex;
-  // max-width: 100%;
+  align-items: flex-start;
 
   &__img {
-    // width: calc(100% / 3);
     min-width: 0;
-    // flex-shrink: 1;
-    // display: block;
-    // width: 33%;
+    width: calc(100% / 3);
   }
 }

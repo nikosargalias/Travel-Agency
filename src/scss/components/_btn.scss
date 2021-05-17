@@ -52,6 +52,7 @@
 
   &--icon {
     &::after {
+      display: inline-block;
       content: ">";
       margin-left: 0.5rem;
       transition: all 0.2s;
