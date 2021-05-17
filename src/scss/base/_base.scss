@@ -1,7 +1,11 @@
 html {
   // font-size: 62.5%;
-  font-size: 50%;
+  font-size: 47%;
   overflow-x: hidden;
+
+  @include media(large-phone) {
+    font-size: 50%;
+  }
 
   @include media(small-tab) {
     font-size: 55%;

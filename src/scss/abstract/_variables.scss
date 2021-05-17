@@ -20,6 +20,7 @@ $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.6);
 $border: solid $color-secondary-medium 1px;
 
 $viewport: (
+  "large-phone": 450px,
   "small-tab": 600px,
   "tablet": 1100px,
 );
